@@ -1,7 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './style.css'
+import './assets/css/style.css'
+import './assets/css/animate.css'
+import './assets/css/style.css'
+import './assets/css/chartist.css'
+import './assets/css/color-1.css'
+import './assets/css/date-picker.css'
+import './assets/css/feather-icon.css'
+// import './assets/css/flag-icon.css'
+import './assets/css/fontawesome.css'
+import './assets/css/icofont.css'
+import './assets/css/prism.css'
+import './assets/css/responsive.css'
+import './assets/css/prism.css'
+import './assets/css/themify.css'
+import './assets/css/vector-map.css'
+
+
+
+
+
+
+
+
+
+
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

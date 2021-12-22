@@ -28,7 +28,7 @@ function Header() {
                 <div className="bookmark-dropdown onhover-show-div">
                   <div className="form-group mb-0">
                     <div className="input-group">
-                      <div className="input-group-prepend"><span className="input-group-text"><i className="fa fa-search"></i></span></div>
+                      <div className="input-group-prepend"><span className="input-group-text"></span></div>
                       <input className="form-control" type="text" placeholder="Search for bookmark..."/>
                     </div>
                   </div>
@@ -90,7 +90,7 @@ function Header() {
                     </div>
                   </li>
                   <li>
-                    <div className="media"><img className="img-fluid rounded-circle me-3" src="../assets/images/user/1.jpg" alt0=""/>
+                    <div className="media"><img className="img-fluid rounded-circle me-3" src="../assets/images/user/1.jpg" alt=""/>
                       <div className="media-body"><span>Erica Hughes</span>
                         <p className="f-12 light-font">Lorem Ipsum is simply dummy...</p>
                       </div>
@@ -105,7 +105,7 @@ function Header() {
                       <p className="f-12">1 hr ago</p>
                     </div>
                   </li>
-                  <li className="text-center"> <a className="f-w-700" href="javascript:void(0)">See All     </a></li>
+                  <li className="text-center"> <a className="f-w-700" href="/">See All     </a></li>
                 </ul>
               </li>
               <li className="onhover-dropdown p-0">
