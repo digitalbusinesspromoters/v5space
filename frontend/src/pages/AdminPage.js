@@ -11,7 +11,11 @@ function AdminPage() {
             <div className='page-body-wrapper null'>
             <Sidebar/>
             </div>
-            
+           <div className="page-body">
+               <div className="container-fluid dashboard-default-sec">
+                   Hello
+               </div>
+           </div>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className="page-main-header">
+        <div className="page-main-header" style={{zIndex:100000,height:"100vh"}}>
         <div className="main-header-right row m-0">
           <div className="main-header-left">
             <div className="logo-wrapper"><a href="index.html"><img className="img-fluid" src="../assets/images/logo/logo.png" alt=""/></a></div>
@@ -12,8 +12,8 @@ function Header() {
           <div className="left-menu-header col">
             <ul>
               <li>
-                <form className="form-inline search-form">
-                  <div className="search-bg"><i className="fa fa-search"></i>
+                <form className="form-inline search-form"  style={{borderBottom:"1px solid lightgray",borderRadius:'3px'}}>
+                  <div className="search-bg">
                     <input className="form-control-plaintext" placeholder="Search here....."/>
                   </div>
                 </form><span className="d-sm-none mobile-search search-bg"><i className="fa fa-search"></i></span>
