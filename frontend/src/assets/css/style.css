@@ -6068,20 +6068,18 @@ table tbody .border-bottom-warning td {
     margin-right: 10px;
 }
 
-.page-main-header .main-header-right .toggle-sidebar {
+.toggle-sidebar {
     cursor: pointer;
     padding: 5px 8px;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-
-.page-main-header .main-header-right .toggle-sidebar svg {
+.toggle-sidebar svg {
     width: 20px;
     color: #24695c;
 }
-
-.page-main-header .main-header-right .toggle-sidebar:hover {
+ .toggle-sidebar:hover {
     background-color: rgba(36, 105, 92, 0.1);
 }
 
