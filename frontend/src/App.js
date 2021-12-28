@@ -1,17 +1,16 @@
 // import logo from './logo.svg';
 // import './App.css';
-import {Router as BrowserRouter, Route,Routes as Switch} from 'react-router-dom'
+import {BrowserRouter, Route,Switch} from 'react-router-dom'
 import AdminPage from './pages/AdminPage';
 function App() {
   return (
-   <>
-    <AdminPage/>
-    {/* <BrowserRouter>
+   
+    <BrowserRouter>
       <Switch>
-        <Route path='/' component={AdminPage}/>
+        <Route path='/admin/:page' component={AdminPage}/>
       </Switch>
-    </BrowserRouter> */}
-    </>
+    </BrowserRouter>
+    
   );
 }
 
