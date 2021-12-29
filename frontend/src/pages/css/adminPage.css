@@ -491,7 +491,8 @@ li {
   border-radius: .5rem;
   margin:1rem;
 }
-.addPropertyForm li{
+.addPropertyForm li
+{
   /* width: 100%; */
   /* max-width: 250px; */
   flex-grow: 1;
@@ -505,7 +506,6 @@ li {
   margin:0;
   margin-left:1rem;
 }
-
 .addPropertyForm ul{
   display:flex;
   flex-wrap: wrap;
@@ -513,6 +513,5 @@ li {
   padding: 2rem;
   max-width: 1000px;
   margin:auto;
-  border-top: 1px solid #24695c;
-  border-bottom: 1px solid #24695c;
+
 }
