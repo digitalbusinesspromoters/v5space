@@ -3,25 +3,25 @@ import React from 'react'
 function CreateTenant() {
     return (
         <div>
-            <h1>Create Tenant</h1>
-            <h1 className='adminBodyh1'>Property Details</h1>
+        
+    <h1 className='adminBodyh1'>Create Tenant</h1>
         <form className='addPropertyForm '>
        
           <ul>
           <li>
-            <label htmlFor='ownerName'>Property ID</label>
+            <label htmlFor='ownerName'>Name</label>
             <input type='text' name='' id='ownerName' />
           </li>
           <li>
-            <label htmlFor='ownerMobile'>D.O.A</label>
+            <label htmlFor='ownerMobile'>Mobile No</label>
             <input type='text' name='' id='ownerMobile' />
           </li>
           <li>
-            <label htmlFor='owneremail'>Property Type</label>
+            <label htmlFor='owneremail'>E-mail</label>
             <input type='text' name='' id='ownerMobile' />
           </li>
           <li>
-            <label htmlFor='owneremail'>Project Name</label>
+            <label htmlFor='owneremail'>Address</label>
             <input type='text' name='' id='ownerMobile' />
           </li>
           <li>
@@ -31,11 +31,15 @@ function CreateTenant() {
         
          
           <li>
-            <label htmlFor='ownerName'>Loacation</label>
+            <label htmlFor='ownerName'>Rent per month</label>
             <input type='text' name='' id='ownerName' />
           </li>
           <li>
-            <label htmlFor='ownerMobile'>Address</label>
+            <label htmlFor='ownerMobile'>Advanced Paid </label>
+            <input type='text' name='' id='ownerMobile' />
+          </li>
+          <li>
+            <label htmlFor='ownerMobile'>Balance Rent </label>
             <input type='text' name='' id='ownerMobile' />
           </li>
           </ul>

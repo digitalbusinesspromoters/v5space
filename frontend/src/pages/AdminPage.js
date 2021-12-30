@@ -44,15 +44,9 @@ function AdminPage(props) {
           viewBox='0 0 24 24'
           fill='none'
           stroke='currentColor'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
-          className='feather feather-align-center status_toggle middle'
-          id='sidebar-toggle'
         >
           <line x1='18' y1='10' x2='6' y2='10'></line>
           <line x1='21' y1='6' x2='3' y2='6'></line>
-          <line x1='21' y1='14' x2='3' y2='14'></line>
           <line x1='18' y1='18' x2='6' y2='18'></line>
         </svg>
       </div>
@@ -60,7 +54,7 @@ function AdminPage(props) {
         className='page-body-wrapper null'
         style={{ display: "flex", flexDirection: "row" }}
       >
-        {showSidebar && <Sidebar />}
+        {showSidebar && <Sidebar show={setshowSidebar}/>}
         <div className='page-body' style={!showSidebar?{marginLeft:0}:{}}>
           <div
             className='container-fluid dashboard-default-sec'

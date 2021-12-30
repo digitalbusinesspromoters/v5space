@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-function Sidebar() {
+function Sidebar({show}) {
   const [disp, setdisp] = useState(0)
   const [ser, setser] = useState(0)
   const navs = [
@@ -113,7 +113,7 @@ function Sidebar() {
               </li>
               {navs.map((nav) => {
                 return (
-                  <Link to={nav.url}>
+                  <Link to={nav.url} >
                     <li className='dropdown'>
                       <p
                         className='menu-title'
@@ -141,10 +141,11 @@ function Sidebar() {
                         <ul
                           className='menu-content'
                           style={{ display: "block" }}
+
                         >
                           {nav.subNav.map((sn) => {
                             return (
-                              <Link to={sn.url}>
+                              <Link to={sn.url} onClick={()=>{if(window.innerWidth<990){show(prev=>!prev);}}}>
                                 <li>
                                   <p style={{ cursor: "pointer" }}>
                                     {sn.subName}

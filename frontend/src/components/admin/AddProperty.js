@@ -1,17 +1,68 @@
 import React,{useState} from 'react'
 import {db} from '../../firebase'
+import { collection, addDoc } from "firebase/firestore";
+
+
 function AddProperty() {
 
   const [pid,setPid]=useState('')
   const [doa,setDoa]=useState('')
   const [pType,setPType]=useState('')
   const [pName,setPName]=useState('')
-  const [projectName,setProjectName]=useState('')
+  const [FlatNo,setFlatNo]=useState('')
+ const [Projecttype,setProjecttype]=useState('')
+ const [Loacation,setLoacation]=useState('')
+ const [Address,setAddress]=useState('')
+ const [AgrementType,setAgrementType]=useState('')
+ const [OwnerFirmName,setOwnerFirmName]=useState('')
+ const [OwnerFirmcontact,setOwnerFirmcontact]=useState('')
+ const [TenureinMonths,setTenureinMonths]=useState('')
+ const [OccupancyStatus,setOccupancyStatus]=useState('')
+ const [V5Advancemet,setV5Advancemet]=useState('')
+ const [V5Rentalcost,setV5Rentalcost]=useState('')
+ const [LetoutAdvancement,setLetoutAdvancement]=useState('')
+ const [LetoutGrossRental,setLetoutGrossRental]=useState('')
+ const [Maintenance,setMaintenance]=useState('')
+ const [TotalLetoutRental,setTotalLetoutRental]=useState('')
+ const [RentReceivableDate,setRentReceivableDate]=useState('')
+ const [AttestedType,setAttestedType]=useState('')
+ const [AttestedBy,setAttestedBy]=useState('')
+ 
 
 
 
-  const handleSubmit= (e)=>{
+
+  const handleSubmit= async(e)=>{
     e.preventDefault(e)
+    try {
+      const docRef = await addDoc(collection(db, "Properties"), {
+       pid,
+       doa,
+       pType,
+       pName,
+       FlatNo,
+       Projecttype,
+       Loacation,
+       Address,
+       AgrementType,
+       OwnerFirmName,
+       OwnerFirmcontact,
+       TenureinMonths,
+       OccupancyStatus,
+       V5Advancemet,
+       V5Rentalcost,
+       LetoutAdvancement,
+       LetoutGrossRental,
+       Maintenance,
+       TotalLetoutRental,
+       RentReceivableDate,
+       AttestedType,
+       AttestedBy,
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
   }
 
 
@@ -30,7 +81,7 @@ function AddProperty() {
           </li>
           <li>
             <label htmlFor='ownerMobile'>D.O.A</label>
-            <input type='text' name='' id='ownerMobile' />
+            <input type='Date' name='' id='ownerMobile' />
           </li>
           <li>
             <label htmlFor='owneremail'>Property Type</label>
@@ -98,10 +149,7 @@ function AddProperty() {
             <label htmlFor='ownerMobile'>Maintenance</label>
             <input type='text' name='' id='ownerMobile' />
           </li>
-          <li>
-            <label htmlFor='owneremail'>V5 Advancemet</label>
-            <input type='text' name='' id='ownerMobile' />
-          </li>
+      
           <li>
             <label htmlFor='owneremail'>Total Let-out Rental</label>
             <input type='text' name='' id='ownerMobile' />
