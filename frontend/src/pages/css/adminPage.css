@@ -485,11 +485,18 @@ li {
   padding: 1rem;
 }
 
-.addPropertyForm input{
+.addPropertyForm input,
+.addPropertyForm textarea{
   flex:1;
   height:2rem;
   border-radius: .5rem;
   margin:1rem;
+  resize: none;
+  border:1px solid black
+}
+.addPropertyForm input:focus,
+.addPropertyForm textarea:focus{
+  border:2px solid #24695C;
 }
 .addPropertyForm li
 {
