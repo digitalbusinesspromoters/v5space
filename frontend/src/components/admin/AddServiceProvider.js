@@ -12,7 +12,7 @@ function AddServiceProvider() {
   const handleSubmit= async(e)=>{
     e.preventDefault(e)
     try {
-      const docRef = await addDoc(collection(db, "Properties"), {
+      const docRef = await addDoc(collection(db, "ServiceProvider"), {
         spname,
         spmobile,
         spemail,

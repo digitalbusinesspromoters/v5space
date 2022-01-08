@@ -522,3 +522,51 @@ li {
   margin:auto;
 
 }
+
+
+.service_table{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:3rem;
+  /* border:1px solid red; */
+
+}
+.service_table table{
+  /* border:1px solid #24695C; */
+
+  width: 100%;
+}
+
+.service_table thead,
+.service_table tr
+{
+  width:100%;
+  display: flex;
+  /* justify-content: space-between; */
+  /* border:1px solid #24695C; */
+
+}
+
+.service_table th,
+.service_table td{
+  width: 45%;
+  margin:5px;
+  padding:.7rem;
+  font-size: 16px;
+  /* border:1px solid #24695C; */
+  margin:auto;
+  text-align: left;
+}
+.service_table ol{
+  padding:0px;
+  padding-left:20px;
+  margin:5px;
+  font-size: 16px;
+  border-left: 1px solid red;
+}
+.service_table th{
+  font-size: 20px;
+}

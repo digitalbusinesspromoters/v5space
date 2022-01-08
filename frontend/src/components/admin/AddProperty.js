@@ -57,9 +57,9 @@ function AddProperty() {
        AttestedType,
        AttestedBy,
       });
-      console.log("Document written with ID: ", docRef.id);
+      alert("Document written with ID: ", docRef.id);
     } catch (e) {
-      console.error("Error adding document: ", e);
+      alert("Error adding document: ", e);
     }
   }
 
@@ -154,7 +154,7 @@ function AddProperty() {
           </li>
           <li>
             <label htmlFor='owneremail'>Rent Receivable Date</label>
-            <input type='text' value={ RentReceivableDate} onChange={e=>setRentReceivableDate(e.target.value)} />
+            <input type='date' value={ RentReceivableDate} onChange={e=>setRentReceivableDate(e.target.value)} />
           </li>
           <li>
             <label htmlFor='owneremail'>Attested Type</label>
