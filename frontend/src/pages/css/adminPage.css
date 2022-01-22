@@ -570,3 +570,21 @@ li {
 .service_table th{
   font-size: 20px;
 }
+.viewTable{
+  overflow-x: auto;
+}
+.viewTable table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.viewTable th, .viewTable td {
+  white-space: nowrap;
+  text-align: left;
+  padding: 20px;
+}
+
+.viewTable tr:nth-child(even){background-color: #f2f2f2}
+.viewTable tr:nth-child(1){background-color: #24695C;color:white}
