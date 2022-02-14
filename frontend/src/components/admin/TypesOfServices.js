@@ -12,9 +12,7 @@ function TypesOfServices() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                Electrician
-                            </td>
+                            <td>Electrician</td>
                             <td>
                                 <ol>
                                     <li>
@@ -25,7 +23,7 @@ function TypesOfServices() {
                                 
                                 </li>
                                 </ol>
-                            </td>
+                                </td>
                         </tr>
                     </tbody>
                 </table>

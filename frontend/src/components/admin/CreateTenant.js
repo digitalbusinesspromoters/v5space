@@ -23,14 +23,13 @@ function CreateTenant() {
       temail,
       taddress,
       tFlatNo,
-      trpm,
       tAdvancedPaid,
       tBalanceRent,
    
     });
-    console.log("Document written with ID: ", docRef.id);
+    alert("Document written with ID: ", docRef.id);
   } catch (e) {
-    console.error("Error adding document: ", e);
+    alert("Error adding document: ", e);
   }
 }
 
